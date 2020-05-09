@@ -1,0 +1,33 @@
+name: Windward Cams
+description: 
+author:
+  name: Daniel Aakjær Sørensen
+  email: hello@windward.life
+
+host: 0.0.0.0
+
+sass:
+  sass_dir: assets/css
+
+collections:
+  cams:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: cams
+    values:
+      layout: cam
+
+permalink: date
+highlighter: rouge
+
+gems:
+  - jekyll-sitemap
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+

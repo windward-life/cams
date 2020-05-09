@@ -1,0 +1,28 @@
+// bootstrap variables
+@import '../../node_modules/bootstrap/scss/functions';
+@import 'override-bootstrap-variables';
+
+// custom variables
+
+$brand-red: #F9615B;
+$brand-blue: #35ADC3;
+$brand-green: #43C7AE;
+$brand-dark-blue: #293B50;
+$brand-light-blue: #A1DDF9;
+$brand-yellow: #D6B44A;
+$brand-purple: #CA5CA3;
+$brand-pink: #E03C71;
+$brand-light-gray: #bbb;
+$white-accent: rgb(240, 240, 240);
+
+
+$color-1: $brand-red; // Black
+$color-2: $body-bg; // San Juan
+$color-3: $gray-500;
+$color-4: #fb5e58; // Carnation
+
+
+// stack order
+$below-content: 1;
+$content: 2;
+$above-content: 3;
