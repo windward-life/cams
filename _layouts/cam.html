@@ -27,14 +27,40 @@ comments: true
 
  -->
 
-<section class="section">
+<section class="section section-full section-compact">
     <div class="section-content">
         <h1 class="section-heading">{{ page.name }}</h1>
-        <img src="{{ site.baseurl }}{{ page.img }}" alt="{{ page.name }}" />
-    </div>
-    {% if site.disqus.shortname %}
-        <div class="section-content mt-0">
-            {% include comments.html %}
+        <div class="row">
+            <div class="col-md-8">
+                <img src="{{ site.baseurl }}{{ page.img }}" alt="{{ page.name }}" />
+
+                <div class="cam-comments mt-5">
+                    <!-- Comment section -->
+                    {% if site.disqus.shortname %}
+                        {% include comments.html %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Description -->
+                <div class="mb-5">
+                    <h3 class="group-heading">Description</h3>
+                    {% if page.description %}
+                        <p>{{ page.description }}</p>
+                    {% endif %}
+                    {% if page.read-more-link %}
+                        <a href="{{ page.read-more-link }}">Read more</a>
+                    {% endif %}
+                </div>
+
+                <!-- Gallery -->
+                <div class="mb-5">
+                    <h3 class="group-heading">images + videos</h3>
+                </div>
+
+            </div>
         </div>
-    {% endif %}      
+    </div>
 </section>
+
+

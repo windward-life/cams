@@ -8,10 +8,12 @@ host: 0.0.0.0
 
 sass:
   sass_dir: assets/css
+  style: compressed
 
 collections:
   cams:
     output: true
+    permalink: /:collection/:path/
 
 defaults:
   - scope:
