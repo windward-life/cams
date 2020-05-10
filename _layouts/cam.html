@@ -1,10 +1,40 @@
 ---
 layout: default
+comments: true
 ---
 
-<div class="section">
+<!-- 
+
+    // 
+    - ID
+    - URL/IP/RTSP
+        - Might just point to an embedded streaming service?
+
+
+    // Public
+    - ID
+    - Spot title
+    - Description
+    - Preview image
+        - Where does this come from? 
+    - Location
+        - Map coordinates?
+
+
+    // Questions
+    -  Server load?? 
+        - How much bandwidth will this need?
+
+ -->
+
+<section class="section">
     <div class="section-content">
         <h1 class="section-heading">{{ page.name }}</h1>
         <img src="{{ site.baseurl }}{{ page.img }}" alt="{{ page.name }}" />
     </div>
-</div>
+    {% if site.disqus.shortname %}
+        <div class="section-content mt-0">
+            {% include comments.html %}
+        </div>
+    {% endif %}      
+</section>

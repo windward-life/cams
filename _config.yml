@@ -31,3 +31,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide
+    shortname: windward-cams
