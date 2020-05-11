@@ -37,3 +37,5 @@ plugins:
 disqus:
     # Leave shortname blank to disable comments site-wide
     shortname: windward-cams
+
+include: [vendor]
