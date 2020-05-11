@@ -32,7 +32,10 @@ comments: true
         <h1 class="section-heading">{{ page.name }}</h1>
         <div class="row">
             <div class="col-md-8">
-                <img src="{{ site.baseurl }}{{ page.img }}" alt="{{ page.name }}" />
+                <!-- <img src="{{ site.baseurl }}{{ page.img }}" alt="{{ page.name }}" /> -->
+                <div id='wowza_player'></div>
+                <script id="player_embed" src="//player.cloud.wowza.com/hosted/h86rxpfb/wowza.js"></script>
+
 
                 <div class="cam-comments mt-5">
                     <!-- Comment section -->
@@ -55,7 +58,15 @@ comments: true
 
                 <!-- Gallery -->
                 <div class="mb-5">
-                    <h3 class="group-heading">images + videos</h3>
+                    <h3 class="group-heading">Latest shots</h3>
+                    <div class="cam-gallery">
+                        <a href="#.#"><img src="http://via.placeholder.com/150" alt="" /></a>
+                        <a href="#.#"><img src="http://via.placeholder.com/150" alt="" /></a>
+                        <a href="#.#"><img src="http://via.placeholder.com/150" alt="" /></a>
+                        <a href="#.#"><img src="http://via.placeholder.com/150" alt="" /></a>
+                        <a href="#.#"><img src="http://via.placeholder.com/150" alt="" /></a>
+                        <a href="#.#"><img src="http://via.placeholder.com/150" alt="" /></a>
+                    </div>
                 </div>
 
             </div>

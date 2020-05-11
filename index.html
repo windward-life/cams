@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 <div class="section section-full section-compact">
     <div class="section-content">
         <h1 class="section-heading">Windward Cams</h1>        
@@ -10,7 +9,7 @@ layout: default
             {% for cam in site.cams %}
                 <figure class="cam">
                     <img alt="{{ cam.title }}" src="{{site.baseurl}}{{ cam.img }}" />
-                    <h3 class="cam-heading">{{ cam.title }}</h3>
+                    <h3 class="cam-heading">{{ cam.title }}, {{ cam.location }}</h3>
                     <a href="{{site.baseurl}}{{ cam.url }}"></a>
                 </figure>
             {% endfor %}
